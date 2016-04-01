@@ -1,0 +1,14 @@
+<div class = 'navi'>
+  <div class = 'leftbox'>
+    <% if action_name == 'index' or action_name == 'show' %>
+      <%= link_to 'ABOUT', root_path, :class => "badge static-badge" %>
+      <%= link_to 'REQUEST', root_path, :class => "badge static-badge" %>
+      <%= link_to 'LOGIN', root_path, :class => "badge static-badge" %>
+    <% end %>
+  </div>
+  <div class = 'rightbox'>
+    <% if action_name == 'index' or action_name == 'show' %>
+      <%= link_to 'New Page', new_page_path, :class => "badge responsive-badge" %>
+    <% end %>
+  </div>
+</div>

@@ -8,11 +8,17 @@
 </head>
 <body>
   <div class = 'main'>
-    <%= link_to root_path do %>
-      <%= image_tag asset_path "logo.png" %>
-    <% end %>
+    <span class = 'logo' >
+      <%= link_to root_path do %>
+        <%= image_tag asset_path "logo.png" %>
+      <% end %>
+    </span>
     <br>
     <%= yield %>
+    <br>
+    <div class = 'footer'>
+      MECANIAN 2016
+    </div>
   </div>
 </body>
 </html>

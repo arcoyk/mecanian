@@ -1,6 +1,6 @@
 <i>Last Update: <%= @last_page.updated_at %></i>
 <%= notice %>
-<%= link_to (button_to 'New Page', type: 'button'), new_page_path %>
+<%= render partial: 'navi' %>
 <% @pages.each do |page| %>
   <%= render partial: 'page_mini', locals: {page: page} %>
 <% end %>

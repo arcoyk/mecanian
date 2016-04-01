@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
-<%= link_to (button_to 'Edit Page', type: 'button'), edit_page_path(@page) %>
+<%= render partial: 'navi' %>
 <%= render partial: 'page', locals: {page: @page} %>
-<hr>
 <% @related_pages.each do |page| %>
   <%= render partial: 'page_mini', locals: {page: page} %>
 <% end %>

@@ -1,6 +1,6 @@
 <%= link_to page do %>
   <div class = 'page-mini' >
-    <h2><b><%= page.title %></b></h2>
+    <h2><%= page.title %></h2>
     <%= page.updated_at %><br>
     <%= markdown_to_text page.content %>
   </div>
