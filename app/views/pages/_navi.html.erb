@@ -7,6 +7,10 @@
     <% end %>
   </div>
   <div class = 'rightbox'>
+    <% if action_name == 'show' %>
+      <%= link_to 'Edit Page', edit_page_path(@page), :class => "badge responsive-badge" %>
+    <% end %>
+
     <% if action_name == 'index' or action_name == 'show' %>
       <%= link_to 'New Page', new_page_path, :class => "badge responsive-badge" %>
     <% end %>
