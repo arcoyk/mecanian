@@ -1,4 +1,7 @@
-<i>Last Update: <%= @last_page.updated_at %></i>
+<% if @last_page %>
+  <i>Last Update: <%= @last_page.updated_at %></i>
+<% end %>
+
 <%= notice %>
 <%= render partial: 'navi' %>
 <% @pages.each do |page| %>
